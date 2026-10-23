@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "gromore_mediation",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ]
+  }
+}

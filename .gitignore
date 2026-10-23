@@ -1,0 +1,16 @@
+.dart_tool/
+.fvm/
+.flutter-plugins-dependencies
+build/
+android/.gradle/
+android/local.properties
+pubspec.lock
+*.iml
+.DS_Store
+
+# HarmonyOS build products
+ohos/oh_modules/
+ohos/.hvigor/
+ohos/build/
+ohos/oh-package-lock.json5
+ohos/BuildProfile.ets

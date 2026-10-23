@@ -1,0 +1,23 @@
+name: gromore_mediation
+description: Android and HarmonyOS GroMore mediation for Flutter with explicit interstitial caching and lifecycle events.
+version: 0.1.0
+publish_to: none
+repository: https://github.com/nix1024/gromore_mediation
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: '>=3.22.0'
+dependencies:
+  flutter:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.nixwang.gromore_mediation
+        pluginClass: GromoreMediationPlugin
+      ohos:
+        pluginClass: GromoreMediationPlugin

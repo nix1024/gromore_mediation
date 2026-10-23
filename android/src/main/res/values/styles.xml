@@ -1,0 +1,9 @@
+<resources>
+    <style name="GromoreSplashTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>

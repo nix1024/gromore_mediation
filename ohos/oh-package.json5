@@ -1,0 +1,11 @@
+{
+  "name": "gromore_mediation",
+  "version": "0.1.0",
+  "description": "GroMore bridge for HarmonyOS",
+  "main": "index.ets",
+  "license": "MIT",
+  "dependencies": {
+    "@csj/openadsdk": "7.6.4",
+    "@csj/testtool": "file:libs/testtool_1.0.0.har"
+  }
+}

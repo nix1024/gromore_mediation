@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application>
+        <activity android:name=".SplashAdActivity"
+            android:exported="false"
+            android:theme="@style/GromoreSplashTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true" />
+    </application>
+</manifest>

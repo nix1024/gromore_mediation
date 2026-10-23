@@ -1,0 +1,37 @@
+group 'com.nixwang.gromore_mediation'
+version '0.1.0'
+
+buildscript {
+    repositories { google(); mavenCentral() }
+    dependencies { classpath 'com.android.tools.build:gradle:8.1.0' }
+}
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://artifact.bytedance.com/repository/pangle' }
+    }
+}
+apply plugin: 'com.android.library'
+android {
+    namespace 'com.nixwang.gromore_mediation'
+    compileSdk 36
+    defaultConfig {
+        minSdk 24
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+    // Tests mock the ad SDK. Do not start its manifest providers/receivers on the JVM.
+    testOptions { unitTests.includeAndroidResources = false }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+dependencies {
+    implementation 'com.pangle.cn:mediation-sdk:7.8.1.4'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation 'androidx.annotation:annotation:1.8.2'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.14.1'
+    testImplementation 'org.mockito:mockito-inline:5.2.0'
+}
